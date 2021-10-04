@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
-
+//bring Button in from Button.file
+//put in button inline as <Button/>
+import Button from './Button' 
 //use for class and function
 //use 'rfce' to impore fnction header below
 //to pass in anything in HeaderofApp.js
@@ -18,10 +20,18 @@ import PropTypes from 'prop-types'
 
 //can change both way (props) or ({titlej})
 const Header = ({title}) => {
+    //declare variable check and funtion onClick inline
+    //Function onClick
+    const onClick = (e) =>{
+        console.log('Click', e);
+    }
+    //call onClick fucn inline of header
     return (
         <header>
             <h1 style= {{color: 'green', backgroundColor: 'black'}}>Hello Task Tracker with inline sytle</h1>
             <h1 style={HeaderSytle}>{title}</h1>
+            <Button color='green' text='Add' onClick= {onClick}/>
+            
         </header>    
     )
 }
