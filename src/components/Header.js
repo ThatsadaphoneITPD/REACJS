@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
 //bring Button in from Button.file
 //put in button inline as <Button/>
-import Button from './Button' 
+import Button from './Button'
+
 //use for class and function
 //use 'rfce' to impore fnction header below
 //to pass in anything in HeaderofApp.js
